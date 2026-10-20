@@ -1,0 +1,839 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: riii;
+    src: url('./fonts/Inter_18pt-Bold.woff');
+}
+
+@font-face {
+    font-family: for;
+    src: url('./fonts/Montserrat-Medium.woff');
+}
+
+@font-face {
+    font-family: primary;
+    src: url('./fonts/Inter_18pt-SemiBold.woff');
+}
+
+@font-face {
+    font-family: claudo;
+    src: url('./fonts/PlayfairDisplay-BoldItalic.woff');
+}
+
+@font-face {
+    font-family: nano;
+    src: url('./fonts/PlayfairDisplay-MediumItalic.woff');
+}
+
+main {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+nav {
+    height: 12%;
+    width: 84%;
+    position: fixed;
+    z-index: 100;
+    border-radius: 1rem;
+    background-color: white;
+    top: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid whitesmoke;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1.3rem;
+}
+
+.nav1 img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.nav1 a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fir {
+    border: none;
+    padding: 7px 19px;
+    background-color: #cdf178;
+    border-radius: 16px;
+}
+
+.fir {
+    height: 32px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    border-radius: 16px;
+}
+
+.fir:hover {
+    background-color: #cdf178;
+}
+
+.nav2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.secnav1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#cal {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #cdf178;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cal i {
+    font-size: 18px;
+}
+
+.num h1 {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.num h1:last-child {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.secnav2 {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 8px 5px 20px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.secnav2 h2 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.aro {
+    height: 50px;
+    width: 50px;
+    background-color: #cdf178;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.aro i {
+    font-size: 18px;
+    transform: rotate(45deg);
+}
+
+.secnav2:hover .aro {
+    transform: rotate(45deg);
+}
+
+.secnav2:hover {
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.secnav2:hover h2 {
+    color: black;
+}
+
+#home {
+    min-height: 110lvh;
+    width: 100%;
+    padding-top: 13%;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    border: 1rem solid white;
+    border-radius: 2rem;
+    background-image: url('https://lawnbustercentral.ca/wp-content/uploads/2026/08/Hero-bg.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.home1 {
+    height: 100%;
+    width: 50%;
+}
+
+.pos {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 110px;
+}
+
+.face {
+    background-color: rgba(255, 255, 255, 0.207);
+    height: 30px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    color: white;
+}
+
+.face p {
+    font-size: 12px;
+}
+
+.facee {
+    background-color: rgba(255, 255, 255, 0.207);
+    height: 30px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    color: white;
+}
+
+.hv {
+    margin-top: 50px;
+}
+
+.hv h2 {
+    color: white;
+    font-size: 5vw;
+    line-height: 0.95;
+    font-family: primary, Arial, sans-serif;
+}
+
+#nn {
+    font-style: italic;
+    font-family: claudo, Georgia, serif;
+}
+
+.week {
+    margin-top: 20px;
+    width: 85%;
+}
+
+.week p {
+    font-size: 1.2vw;
+    line-height: 1.5;
+    color: white;
+}
+
+.free {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 20px;
+}
+
+#get {
+    background-color: #cdf178;
+    height: 70px;
+    width: 240px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+#get h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#get:hover {
+    transform: translateY(-4px);
+}
+
+#get .arr {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#get:hover .arr {
+    transform: rotate(45deg);
+}
+
+.arr img {
+    height: 80%;
+    width: auto;
+}
+
+#call {
+    height: 80px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#call h2 {
+    color: white;
+    font-size: 15px;
+}
+
+.home2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+
+.home21 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.home21 p {
+    color: white;
+    font-size: 12px;
+}
+
+.glass {
+    width: 330px;
+    height: 110px;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.sir {
+    height: 90px;
+    width: 160px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    color: white;
+}
+
+.sir h2 {
+    font-size: 30px;
+}
+
+.sir p {
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.gar {
+    height: 90px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+.pla {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #cdf178;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pla i {
+    color: black;
+    font-size: 14px;
+}
+
+.ser {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 8%;
+    background-color: white;
+}
+
+.ser p {
+    font-size: 13px;
+    color: #333;
+}
+
+#about {
+    width: 100%;
+    min-height: 650px;
+    padding: 100px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    background-color: #f5f5f5;
+}
+
+.aboutleft {
+    width: 45%;
+}
+
+.aboutleft h3 {
+    font-family: primary, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.aboutlefting {
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+    background-image: url('https://lawnbustercentral.ca/wp-content/uploads/2026/08/Lawn-mowing.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutlefticon {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.aboutlefticon i {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #cdf178;
+    color: black;
+    transition: 0.4s;
+}
+
+.aboutlefticon i:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.aboutright {
+    width: 45%;
+    padding-top: 50px;
+}
+
+.aboutright h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #333;
+}
+
+.aboutright > a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.aboutrightaro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.aboutr1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.aboutr1 h3 {
+    font-size: 14px;
+}
+
+.aarr {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #cdf178;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.aarr i {
+    font-size: 18px;
+    transform: rotate(45deg);
+}
+
+.aboutr1:hover .aarr {
+    transform: rotate(45deg);
+}
+
+.aboutr2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#service {
+    width: 100%;
+    min-height: 600px;
+    padding: 100px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #cdf178;
+}
+
+.serviceleft {
+    width: 55%;
+}
+
+.serviceleft > p:first-child {
+    font-family: primary, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.serviceleft h1 {
+    font-family: primary, Arial, sans-serif;
+    font-size: 5vw;
+    line-height: 0.95;
+    font-weight: 600;
+}
+
+.serviceleft > p:nth-of-type(2) {
+    font-family: claudo, Georgia, serif;
+    font-size: 5vw;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.serviceleft .lawn {
+    font-family: primary, Arial, sans-serif;
+    font-size: 5vw;
+    line-height: 0.95;
+    color: white;
+    margin-top: 5px;
+}
+
+.serviceright {
+    width: 30%;
+    padding-top: 60px;
+}
+
+.serviceright p {
+    font-family: for, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #222;
+}
+
+@media (max-width: 1100px) {
+
+    nav {
+        width: 92%;
+    }
+
+    .nav1 a {
+        font-size: 14px;
+    }
+
+    .nav1 img {
+        height: 50px;
+    }
+
+    .num {
+        display: none;
+    }
+
+    .hv h2 {
+        font-size: 6vw;
+    }
+
+    .week p {
+        font-size: 1.5vw;
+    }
+
+    .serviceleft h1,
+    .serviceleft > p:nth-of-type(2),
+    .serviceleft .lawn {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    nav {
+        width: 95%;
+        height: auto;
+        min-height: 80px;
+        padding: 10px;
+        top: 1rem;
+    }
+
+    .nav1 {
+        gap: 8px;
+        padding: 0.5rem;
+    }
+
+    .nav1 img {
+        height: 40px;
+    }
+
+    .fir {
+        width: 70px;
+    }
+
+    .nav1 a {
+        font-size: 12px;
+    }
+
+    .secnav1 {
+        display: none;
+    }
+
+    #home {
+        min-height: 100vh;
+        padding-top: 180px;
+        padding-left: 7%;
+        padding-right: 7%;
+        flex-direction: column;
+    }
+
+    .home1,
+    .home2 {
+        width: 100%;
+    }
+
+    .pos {
+        padding-top: 0;
+        height: auto;
+    }
+
+    .hv {
+        margin-top: 40px;
+    }
+
+    .hv h2 {
+        font-size: 10vw;
+    }
+
+    .week {
+        width: 100%;
+    }
+
+    .week p {
+        font-size: 15px;
+    }
+
+    .home2 {
+        margin-top: 50px;
+        align-items: flex-start;
+    }
+
+    .home21 {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #about {
+        flex-direction: column;
+        padding: 70px 7%;
+    }
+
+    .aboutleft,
+    .aboutright {
+        width: 100%;
+    }
+
+    #service {
+        flex-direction: column;
+        gap: 40px;
+        padding: 70px 7%;
+    }
+
+    .serviceleft,
+    .serviceright {
+        width: 100%;
+    }
+
+    .serviceleft h1,
+    .serviceleft > p:nth-of-type(2),
+    .serviceleft .lawn {
+        font-size: 10vw;
+    }
+
+    .serviceright {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    nav {
+        border-radius: 15px;
+    }
+
+    .nav1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav1 img {
+        height: 35px;
+    }
+
+    .nav1 a {
+        display: none;
+    }
+
+    #fir {
+        display: flex;
+    }
+
+    .secnav2 {
+        display: none;
+    }
+
+    #home {
+        border: 0.5rem solid white;
+        border-radius: 1.2rem;
+    }
+
+    .pos {
+        gap: 8px;
+    }
+
+    .face {
+        width: 90px;
+    }
+
+    .facee {
+        width: 130px;
+    }
+
+    .hv h2 {
+        font-size: 12vw;
+    }
+
+    #get {
+        width: 210px;
+    }
+
+    #call h2 {
+        font-size: 13px;
+    }
+
+    .glass {
+        width: 100%;
+    }
+
+    .sir {
+        width: 55%;
+    }
+
+    .gar {
+        width: 45%;
+    }
+
+    .ser {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .aboutright h5 {
+        font-size: 15px;
+    }
+
+    #service {
+        min-height: 500px;
+        padding: 60px 7%;
+        background-image: url('https://lawnbustercentral.ca/wp-content/uploads/2026/08/Footer.webp');
+        min-height: 110lvh;
+        display: flex;
+        border: 1rem solid white;
+        border-radius: 2rem;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .serviceleft h1,
+    .serviceleft > p:nth-of-type(2),
+    .serviceleft .lawn {
+        font-size: 12vw;
+    }
+
+    .serviceright p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,64 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    width:100%;
+    height:100%;    
+    
+}    
+main{
+    top:15%;
+    left:35%;
+    position:relative;
+    height:70%;
+    width:35%;
+    border-radius: 20px;
+    border: 20px solid black;   
+    overflow:hidden;
+    
+}
+
+main img{
+    width:100%;
+    
+    height:100%;
+    object-fit: cover;
+   transition:all 0.3s ;  
+    
+}
+
+main .overlay{
+    width:100%;
+    
+    height:100%;
+
+    opacity:0;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition:all 0.3s ;
+    top:0;
+    left:0;
+   
+}
+main:hover img{
+    transform:scale(1.3);
+    
+}
+main:hover .overlay {
+    opacity:0.6;
+    
+
+
+}
+.text h1{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}

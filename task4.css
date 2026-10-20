@@ -1,0 +1,140 @@
+main{
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+    main > h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+    
+       main > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+.cards{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+
+.basic{
+    width:320px;
+    height: 360px;
+    background-color: white;
+    border:1px solid #ddd;
+    border-radius: 15px;
+    padding:30px 20px;
+     text-align: center;
+
+}
+.price{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+.pro{
+    background-color: #4f46e5;
+    width: 340px;
+    height:400px;
+    border:1px solid #4f46e5;
+    border-radius: 15px;
+    padding:30px 20px;
+    text-align: center;
+
+}
+.premium{
+    background-color: white;
+    width: 320px;
+    height:360px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    padding:30px 20px;
+    text-align: center;
+
+}
+.price h1{
+    color: black;
+    font-size:40px;
+}
+.pro .price h1{
+color:white;
+}
+.pro .price span {
+    color: rgb(184, 178, 178);
+}
+.basic h3
+ {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.pro h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.premium h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+.basic p
+ {
+    margin: 15px 0;
+}
+
+.pro p {
+    margin: 15px 0;
+}
+
+.premium p {
+    margin: 15px 0;
+}
+
+.basic button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.basic button{
+    background-color: #4f46e5;
+    color: white;
+}
+
+.pro button
+{
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pro button {
+    background-color: white;
+    color: #4f46e5;
+}
+
+.premium button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.premium button {
+    background-color: #4f46e5;
+    color: white;
+}
+  
